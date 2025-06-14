@@ -6,7 +6,7 @@
     <title>Carousel Dynamique - Destinations</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link href="section2.css" rel ="stylesheet">    
+    <link href="../css/section2.css" rel ="stylesheet">    
 
 </head>
 <body>
@@ -61,7 +61,7 @@
                 <div class="carousel-item">
                     <div class="row g-4">
                         <div class="col-md-4">
-                            <div class="destination-card" style="background: url('fes.jpg') center/cover;">
+                            <div class="destination-card" style="background: url('../assets/fes.jpg') center/cover;">
                                 <div class="card-content">
                                     <h2 class="card-title">Fès</h2>
                                     <p class="card-subtitle">La capitale spirituelle du Maroc</p>
@@ -72,7 +72,7 @@
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="destination-card" style="background: url('agadir.jpg') center/cover;">
+                            <div class="destination-card" style="background: url('../assets/agadir.jpg') center/cover;">
                                 <div class="card-content">
                                     <h2 class="card-title">Agadir</h2>
                                     <p class="card-subtitle">Soleil, plages et modernité</p>
@@ -83,7 +83,7 @@
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="destination-card" style="background: url('rabat.jpg') center/cover;">
+                            <div class="destination-card" style="background: url('../assets/rabat.jpg') center/cover;">
                                 <div class="card-content">
                                     <h2 class="card-title">Rabat</h2>
                                     <p class="card-subtitle">La capitale administrative du royaume</p>
@@ -99,7 +99,7 @@
                 <div class="carousel-item">
                     <div class="row g-4">
                         <div class="col-md-4">
-                            <div class="destination-card" style="background:  url('chafchaoun.jpg') center/cover;">
+                            <div class="destination-card" style="background:  url('../assets/chafchaoun.jpg') center/cover;">
                                 <div class="card-content">
                                     <h2 class="card-title">Chefchaouen</h2>
                                     <p class="card-subtitle">La perle bleue du Rif</p>
@@ -110,7 +110,7 @@
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="destination-card" style="background: url('essauira.jpg') center/cover;">
+                            <div class="destination-card" style="background: url('../assets/essauira.jpg') center/cover;">
                                 <div class="card-content">
                                     <h2 class="card-title">Essaouira</h2>
                                     <p class="card-subtitle">La cité des vents atlantiques</p>
@@ -121,7 +121,7 @@
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="destination-card" style="background:url('ourzazat.jpg') center/cover;">
+                            <div class="destination-card" style="background:url('../assets/ourzazat.jpg') center/cover;">
                                 <div class="card-content">
                                     <h2 class="card-title">Ouarzazate</h2>
                                     <p class="card-subtitle">La porte du désert</p>

@@ -85,15 +85,15 @@ body {
 }
 
 .casablanca {
-    background: url('casa.jpg') center/cover;
+    background: url('../assets/casa.jpg') center/cover;
 }
 
 .marrakech {
-    background:url('marakesh.avif') center/cover;
+    background:url('../assets/marakesh.avif') center/cover;
 }
 
 .tanger {
-    background: url('tanger.jpg') center/cover;
+    background: url('../assets/tanger.jpg') center/cover;
 }
 
 .promo-banner {
