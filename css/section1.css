@@ -15,49 +15,53 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+}   
 
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     overflow-x: hidden;
+    background-color: #1a1a1a;
 }
 
 /* Navigation */
+
 .navbar {
-    background: rgba(0, 0, 0, 0.7) !important;
+    background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
-    transition: all 0.5s ease;
-    padding: 1rem 0;
+    -webkit-backdrop-filter: blur(10px);
+    transition: background 0.3s ease; /* smooth effect */
+    
 }
 
-.navbar.scrolled {
-    background: rgba(0, 0, 0, 0.95) !important;
-    padding: 0.5rem 0;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+/* Initial Transparent Navbar */
+.my-navbar {
+    background: transparent;
+    transition: background 0.4s ease, backdrop-filter 0.4s ease, color 0.4s ease;
+    padding: 0px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius:50px ;
 }
 
-.navbar-brand {
-    font-family: 'Playfair Display', serif;
-    font-size: 2rem;
-    font-weight: 700;
-    color: var(--gold) !important;
-    display: flex;
-    align-items: center;
-    transition: all 0.3s ease;
+/* Change nav link colors when scrolled */
+.my-navbar.scrolled .nav-link {
+    color: rgb(0, 0, 0) !important;
+    transition: color 0.4s ease;
 }
 
-.navbar.scrolled .navbar-brand {
-    font-size: 1.8rem;
+/* Optional: Make nav link color darker when not scrolled */
+.my-navbar .nav-link {
+    color: rgb(255, 255, 255) !important;
+    transition: color 0.4s ease;
+
 }
 
-.crown-icon {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-    color: var(--gold);
-    transition: all 0.3s ease;
+.logo-img{
+    width: 100px;
+
 }
+
+
 
 .navbar.scrolled .crown-icon {
     width: 35px;
@@ -68,6 +72,7 @@ body {
     color: white !important;
     font-weight: 500;
     margin: 0 15px;
+    text-align: center;
     transition: all 0.3s ease;
     text-transform: capitalize;
     position: relative;
@@ -93,26 +98,26 @@ body {
 }
 
 .btn-login {
-    background: var(--gold);
-    color: var(--dark) !important;
+    /* background: var(--gold); */
     border: 2px solid var(--gold);
-    width: 120px;
-    height: 40px;
+    padding: 6px 30px;
+    color: white;
+    text-decoration: none;
     text-align: center;
     border-radius: 25px;
     font-weight: 600;
     transition: all 0.3s ease;
 }
 
-.btn-login:hover {
+/* .btn-login:hover {
     background: transparent;
     color: var(--gold) !important;
     transform: translateY(-2px);
-}
+} */
 
-/* Hero Section with Video Background */
+/* Hero Section with VideoBackground */
 .hero-section {
-    height: 100vh;
+    height: 120vh;
     position: relative;
     overflow: hidden;
     display: flex;
@@ -128,8 +133,7 @@ body {
     height: 90%;
     object-fit: cover;
     z-index: -1;
-    border-bottom-right-radius: 100px;
-    border-bottom-left-radius: 100px ;
+   
 }
 
 .overlay {
@@ -139,9 +143,8 @@ body {
     width: 100%;
     height: 90%;
     background: rgba(0, 0, 0, 0.4);
-    z-index: 0;
-    border-bottom-right-radius: 100px;
-    border-bottom-left-radius: 100px ;
+    z-index: -1;
+   
 }
 
 .hero-content {
@@ -164,14 +167,14 @@ body {
 }
 
 .hero-subtitle {
-    font-size: 1.8rem;
+    font-size: 20px;
     margin-bottom: 2rem;
     color: #f8f9fa;
     animation: fadeInUp 1s ease-out 0.3s both;
-    font-style: italic;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+    bottom: 0;
+    margin-top: 300px;
+    align-items: start;
+    text-align: left;
 }
 
 /* Booking Section */
@@ -222,7 +225,7 @@ body {
     display: block;
     font-size: 0.9rem;
     font-weight: 500;
-    color: #333;
+    color: var(--gold);
     margin-bottom: 5px;
 }
 
@@ -267,6 +270,26 @@ body {
     background: #333;
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.btn-search {
+    background:#3e2758;
+    border: none;
+    color: white;
+    font-weight: 600;
+    padding: 12px 25px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+}
+.btn-search:hover {
+    background:#bd83ba;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    color: #1a1a1a;
 }
 
 .form-extras {
@@ -393,8 +416,6 @@ body {
         font-size: 1.5rem;
     }
     
-    .crown-icon {
-        width: 30px;
-        height: 30px;
-    }
+    
 }
+/*  */
